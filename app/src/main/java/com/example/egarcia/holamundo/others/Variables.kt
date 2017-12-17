@@ -9,11 +9,11 @@ import javax.xml.transform.dom.DOMLocator
  */
 
 /*
-En Kotlin todo es un objeto.
-No hay tipos basico, y no existe void.
-Si algo no devuelve nada, esta devolviendo Unit object.
-Las variables pueden ser mutables o inmutables, usaremos imutables siempre que sea posible.( var vs val)
-Los tipos son definidos despues del nombre de la variable, con dos puntos y espacio(var nombre: tipo )
+In Kotlin everything is an object.
+there are not basic types, and void doesn't exists
+If something doesn't return nothing, then it is returning an Unit Object
+Variables can be mutables or inmutables, we are going to use immutable every time we can( var vs val)
+Types are defined after variable's name with colon and space( var name: type)
 */
 class Variables {
 
@@ -25,8 +25,8 @@ class Variables {
     private var variable5 = 1.9;
 
     private fun showCase(){
-        Log.w("Variable-0","¿Es variable0 un Integer? -->"+(variable0 is Int)+"¿Por que no un byte?")
-        Log.w("Variable-1","¿Es variable1 un Byte? -->"+(variable1 is Byte)+"¿Por que no un byte?")
+        Log.w("Variable-0","¿Is variable0 an Integer? -->"+(variable0 is Int))
+        Log.w("Variable-1","¿Is variable1 u Byte? -->"+(variable1 is Byte))
     }
     //show case for int
     private fun showCase2(){
@@ -36,17 +36,17 @@ class Variables {
 
     //show case for long
     private fun showCase3(){
-        Log.w("VARIABLE-3","¿Es un valor Long?-->"+(variable3 is Long))
+        Log.w("VARIABLE-3","¿Is Long?-->"+(variable3 is Long))
         variable3= Long.MAX_VALUE
     }
 
     //show case for float
     private fun showCase4(){
-        Log.w("VARIABLE-4","¿Es un valor Float? -->"+(variable4 is Float))
+        Log.w("VARIABLE-4","¿Is Float? -->"+(variable4 is Float))
     }
 
     //show case for Double
     private fun showCase5(){
-        Log.w("VARIABLE-5","¿Es un valor Double? -->"+(variable5 is Double))
+        Log.w("VARIABLE-5","¿Is Double?? -->"+(variable5 is Double))
     }
 }
