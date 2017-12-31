@@ -30,8 +30,6 @@ class Variables {
     private var variable10 = arrayOfNulls<Int>(10)//Only accepts int if you want to change the value
     private val variable11 = "This variable in read-only-immutable"
 
-
-
     private fun showCase(){
         Log.w("Variable-0","¿Is variable0 an Integer? -->"+(variable0 is Int))
         Log.w("Variable-1","¿Is variable1 u Byte? -->"+(variable1 is Byte))
@@ -100,5 +98,18 @@ class Variables {
         variable10= arrayOfNulls(3)
         //can be changed to an array of int
         variable10 = arrayOf(1,2,3,4,5)
+    }
+
+    fun showCases(){
+        showCase()
+        showCase2()
+        showCase3()
+        showCase4()
+        showCase5()
+        showCase6()
+        showCase7()
+        showCase8()
+        showCase9()
+        showCase10()
     }
 }
