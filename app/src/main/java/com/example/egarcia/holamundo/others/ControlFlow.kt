@@ -68,9 +68,24 @@ class ControlFlow {
         for( (index,number) in numbers.withIndex() ) Log.w("CONTROL-FLOW-4", "$index: ${number.toString()}")
     }
 
+    private fun showCase5(){
+        //while and do while
+        var x = 10
+
+        while(x>10){
+            Log.w("CONTROL-FLOW-5", x--.toString())
+        }
+
+        do{
+            Log.w("CONTROL-FLOW-5", x--.toString())
+        }while ( x > 0 )
+    }
+
     fun showCases(){
         showCase1()
-        showCase2();
+        showCase2()
         showCase3()
+        showCase4()
+
     }
 }
