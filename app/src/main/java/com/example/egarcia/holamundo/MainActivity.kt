@@ -2,6 +2,7 @@ package com.example.egarcia.holamundo
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.egarcia.holamundo.others.AccessModifiers
 import com.example.egarcia.holamundo.others.ControlFlow
 import com.example.egarcia.holamundo.others.Operators
 import com.example.egarcia.holamundo.others.Variables
@@ -15,5 +16,6 @@ class MainActivity : AppCompatActivity() {
         Variables().showCases()
         Operators().showCases()
         ControlFlow().showCases()
+        AccessModifiers()
     }
 }
